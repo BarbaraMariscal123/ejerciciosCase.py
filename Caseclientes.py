@@ -1,25 +1,25 @@
-nombre = ""
-apellido = ""
-telefono = 0
-edad = 0
-correo = ""
-contrasena = ""
-opcion = 0
+nombre = []
+apellido = []
+telefono = []
+edad = []
+correo = []
+contrasena = []
+opcion = []
 
+while True:
+    print("Bienvenido al sistema de registro de clientes")
+    print("---------MENU PRINCIPAL---------")
+    print("1. Registrar cliente")
+    print("2. Ver información del cliente")
+    print("3. Borrar información del cliente")
+    print("4. Modificar información del cliente")
+    print("5. Salir")
+    print("---------------------------------")
+    opcion = int(input("Selecciona una opción: "))
 
-print("Bienvenido al sistema de registro de clientes")
-print("---------MENU PRINCIPAL---------")
-print("1. Registrar cliente")
-print("2. Ver información del cliente")
-print("3. Borrar información del cliente")
-print("4. Modificar información del cliente")
-print("5. Salir")
-print("---------------------------------")
-opcion = int(input("Selecciona una opción: "))
+    match opcion:#Aquí inicia el match, que es una validación de caso
 
-match opcion:#Aquí inicia el match, que es una validación de caso
-
-     case 1:
+        case 1:
         nombre = input("Ingresa tu nombre: ")
         apellido = input("Ingresa tu apellido: ")
         telefono = int(input("Ingresa tu número de teléfono: "))
